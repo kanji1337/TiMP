@@ -9,18 +9,17 @@ using namespace std;
 class Tovar{
 
 	private:
-		int quality;
-		int tovar_quality()
-		{
-		    quality = rand() % 3;
-		    return quality;
-		};
+		int tovar_quality();
 
     public:
     	int cost, amount, workes_salary, milk_quality;
-    	int overload(double percent, int milk_quality);    //schitaet balli ratinga
-		int temp = tovar_quality();
-		void inkapsulyaciya(int temp); 
+    	void inkapsulyaciya(int quality); 
+};
+//SRP
+class overload_rod
+{
+	public:
+	int overload(double percent, int milk_quality); 
 };
 
 #endif

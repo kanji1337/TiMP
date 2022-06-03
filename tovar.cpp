@@ -12,6 +12,13 @@ int overload(double percent, int milk_quality)
 	return rating_of_milk_firm;
 }
 
+int tovar_quality()
+	{
+		int quality;
+	    quality = rand() % 3;
+	    return quality;
+	};
+
 void inkapsulyaciya(int quality)
 {
 	string end_quality;
